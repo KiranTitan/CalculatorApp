@@ -7,6 +7,9 @@
         double a = double.Parse(Console.ReadLine()!);
         Console.WriteLine("Введите второе число: ");
         double b = double.Parse(Console.ReadLine()!);
-        Console.WriteLine($"Результат сложения: {a + b}");
+        Console.WriteLine("Введите операцию (+ или *): ");
+        char op = Console.ReadLine()[0];
+        double result = op == '+' ? a + b : a * b;
+        Console.WriteLine($"Результат: {result}");
     }
 }
